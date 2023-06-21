@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         EditText editText = findViewById(R.id.editText);
 
+
+        //to be resolved : when time is set and app is destroyed then at the time of alarm triggering, media just plays for 1-2 seconds
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         findViewById(R.id.btnSet).setOnClickListener(new View.OnClickListener() {
             @Override
